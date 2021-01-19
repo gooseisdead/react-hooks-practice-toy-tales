@@ -30,6 +30,7 @@ function ToyForm({ localHandleNewToy }) {
         <input
           type="text"
           name="name"
+          value={name}
           placeholder="Enter a toy's name..."
           className="input-text"
           onChange={(e) => setName(e.target.value)}
@@ -38,6 +39,7 @@ function ToyForm({ localHandleNewToy }) {
         <input
           type="text"
           name="image"
+          value={image}
           placeholder="Enter a toy's image URL..."
           className="input-text"
           onChange={(e) => setImage(e.target.value)}
