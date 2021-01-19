@@ -18,12 +18,18 @@ Before you start building out the application, the first step that you should
 take is to draw out your component hierarchy. This will tell you how components
 can pass data to each other as well as where that information should be stored.
 
+--App 
+----Header
+----ToyForm
+----ToyContainer
+-------ToyCard
+
 ## Deliverables
 
-- _When our application loads_, make a GET request to `/toys` to fetch the toy
+<!-- - _When our application loads_, make a GET request to `/toys` to fetch the toy
   array. Given your component tree, think about which component should be
   responsible for the array. After you have put the data in the proper
-  component, your next job is to render the `ToyCard` components on the page.
+  component, your next job is to render the `ToyCard` components on the page. -->
 
 - _When the `ToyForm` is submitted_, make a POST request to `/toys` to save a
   new toy to the server. Using the ideas of controlled form and inverse data

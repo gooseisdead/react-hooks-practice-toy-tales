@@ -16,6 +16,11 @@ function App() {
     })
   }, [])
 
+  function handleNewToy(newToy) {
+    const updatedToyArray = [...toys, newToy]
+    setToys(updatedToyArray)
+  }
+
   function handleClick() {
     setShowForm((showForm) => !showForm);
   }
@@ -23,7 +28,7 @@ function App() {
   return (
     <>
       <Header />
-      {showForm ? <ToyForm /> : null}
+      {showForm ? <ToyForm localHandleNewToy={handleNewToy} /> : null}
       <div className="buttonContainer">
         <button onClick={handleClick}>Add a Toy</button>
       </div>
